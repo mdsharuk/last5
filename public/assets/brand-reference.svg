@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 210">
+  <rect width="640" height="210" rx="18" fill="#f7fafc"/>
+  <text x="36" y="46" font-family="Roboto, Arial, sans-serif" font-size="20" font-weight="700" fill="#19678b">Last5 Deal — brand palette</text>
+  <g font-family="Roboto, Arial, sans-serif">
+    <rect x="36" y="74" width="168" height="86" rx="12" fill="#19678b"/>
+    <text x="52" y="117" font-size="15" font-weight="700" fill="#ffffff">Primary</text>
+    <text x="52" y="141" font-size="13" fill="#dbeaf2">#19678B</text>
+    <rect x="236" y="74" width="168" height="86" rx="12" fill="#1fa5cd"/>
+    <text x="252" y="117" font-size="15" font-weight="700" fill="#ffffff">Secondary</text>
+    <text x="252" y="141" font-size="13" fill="#e9f7fc">#1FA5CD</text>
+    <rect x="436" y="74" width="168" height="86" rx="12" fill="#7dc142"/>
+    <text x="452" y="117" font-size="15" font-weight="700" fill="#173322">Accent</text>
+    <text x="452" y="141" font-size="13" fill="#254d24">#7DC142</text>
+  </g>
+  <text x="36" y="190" font-family="Roboto, Arial, sans-serif" font-size="12" fill="#607c8c">Primary headings, navigation and buttons · Secondary highlights · Accent offers and stickers</text>
+</svg>

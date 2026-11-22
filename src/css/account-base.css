@@ -1,0 +1,2965 @@
+/* last5-blue-palette-v1 */
+/* last5-readability-v1 */
+.account-app {
+  --orange: #19678b;
+  --orange-dark: #0f4c68;
+  --orange-soft: #eaf3f7;
+  --ink: #19678b;
+  --muted: #78808b;
+  --line: #e9ebee;
+  --bg: #f5f9fb;
+  --green: #19678b;
+  --green-soft: #ecf6f8;
+  --red: #c45151;
+  --radius: 14px;
+  --shadow: 0 12px 45px #19678b12;
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+.account-app {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.account-app button,
+.account-app input,
+.account-app select,
+.account-app textarea {
+  font: inherit;
+}
+.account-app button,
+.account-app a {
+  -webkit-tap-highlight-color: transparent;
+}
+.account-app button {
+  cursor: pointer;
+}
+.account-app button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.account-app a {
+  color: inherit;
+  text-decoration: none;
+}
+.account-app button:focus-visible,
+.account-app a:focus-visible,
+.account-app input:focus-visible,
+.account-app select:focus-visible,
+.account-app textarea:focus-visible {
+  outline: 3px solid #19678b75;
+  outline-offset: 3px;
+}
+.account-app button {
+  border: 0;
+  background: none;
+  color: inherit;
+}
+.account-app svg {
+  display: block;
+}
+.account-app img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.account-app h1,
+.account-app h2,
+.account-app h3,
+.account-app h4,
+.account-app p {
+  margin: 0;
+}
+.account-app h1,
+.account-app h2,
+.account-app h3,
+.account-app .brand,
+.account-app .metric-value {
+  font-family: "Roboto", Arial, sans-serif;
+}
+.account-app h1 {
+  font-size: 28px;
+  letter-spacing: -1px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+.account-app h2 {
+  font-size: 17px;
+  font-weight: 750;
+  letter-spacing: -0.4px;
+}
+.account-app h3 {
+  font-size: 16px;
+  font-weight: 750;
+}
+.account-app small,
+.account-app .small {
+  font-size: 14px;
+}
+.account-app .muted {
+  color: var(--muted);
+}
+.account-app .tiny {
+  font-size: 13.5px;
+}
+.account-app .orange {
+  color: var(--orange);
+}
+.account-app .green {
+  color: var(--green);
+}
+.account-app .red {
+  color: var(--red);
+}
+.account-app .strong {
+  font-weight: 700;
+}
+.account-app .nowrap {
+  white-space: nowrap;
+}
+.account-app .mono {
+  font-variant-numeric: tabular-nums;
+}
+.account-app .skip-link {
+  position: fixed;
+  left: 15px;
+  top: -80px;
+  background: var(--ink);
+  color: white;
+  z-index: 100;
+  padding: 14px;
+}
+.account-app .skip-link:focus {
+  top: 10px;
+}
+.account-app .icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.7;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+.account-app .icon.sm {
+  width: 16px;
+  height: 16px;
+}
+.account-app .icon.lg {
+  width: 24px;
+  height: 24px;
+}
+.account-app .layout {
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+  min-height: 100vh;
+}
+.account-app .sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 236px;
+  background: white;
+  border-right: 1px solid var(--line);
+  padding: 30px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+  overflow-y: auto;
+}
+.account-app .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.account-app .brand b {
+  color: var(--orange);
+}
+.account-app .brand-mark {
+  width: 37px;
+  height: 37px;
+  border-radius: 12px;
+  background: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 29px;
+  font-weight: 800;
+  transform: rotate(-6deg);
+  box-shadow: 0 4px 8px #19678b20;
+}
+.account-app .brand-mark span {
+  transform: rotate(6deg);
+}
+.account-app .merchant-label {
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #9b9fa6;
+  margin: 13px 0 28px 48px;
+}
+.account-app .shop-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 9px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  background: #fcfcfd;
+}
+.account-app .shop-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 9px;
+  background: #e6f0f6;
+  color: #4f7390;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  font-weight: 750;
+  flex: none;
+}
+.account-app .shop-switch .shop-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+  white-space: nowrap;
+}
+.account-app .shop-switch small {
+  font-size: 13px;
+  color: var(--muted);
+}
+.account-app .nav-section {
+  font-size: 13px;
+  color: #9a9fa6;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  padding: 0 13px;
+  margin: 12px 0 8px;
+}
+.account-app .nav-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-radius: 8px;
+  padding: 11px 13px;
+  color: #777e88;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 3px;
+  transition: 0.15s;
+}
+.account-app .nav-link:hover {
+  background: #f8f8fa;
+  color: var(--ink);
+}
+.account-app .nav-link.active {
+  background: var(--orange-soft);
+  color: var(--orange);
+  font-weight: 700;
+}
+.account-app .nav-link.active .icon {
+  stroke-width: 2;
+}
+.account-app .nav-count {
+  margin-left: auto;
+  background: var(--orange);
+  color: white;
+  border-radius: 5px;
+  font-size: 13px;
+  min-width: 18px;
+  text-align: center;
+  padding: 1px 4px;
+}
+.account-app .nav-count.gray {
+  background: #f0f1f4;
+  color: #6e7680;
+}
+.account-app .sidebar-bottom {
+  margin-top: auto;
+  padding-top: 30px;
+}
+.account-app .help-card {
+  padding: 15px;
+  border-radius: 12px;
+  background: #f5f9fb;
+}
+.account-app .help-card .help-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: white;
+  margin-bottom: 9px;
+  box-shadow: 0 2px 5px #00000006;
+}
+.account-app .help-card h3 {
+  font-size: 14px;
+}
+.account-app .help-card p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 4px 0 11px;
+}
+.account-app .help-card button {
+  font-size: 13.5px;
+  color: var(--orange);
+  font-weight: 700;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  padding: 0;
+}
+.account-app .profile-small {
+  margin-top: 18px;
+  padding-top: 17px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.account-app .avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e5eef5;
+  color: #53708a;
+  font-weight: 700;
+  font-size: 14px;
+  flex: none;
+}
+.account-app .avatar.blue {
+  background: #e7edf6;
+  color: #7086a8;
+}
+.account-app .avatar.pink {
+  background: #f7e9e9;
+  color: #b87b7b;
+}
+.account-app .avatar.purple {
+  background: #ece8f5;
+  color: #9382b0;
+}
+.account-app .profile-small .name {
+  font-size: 14px;
+  font-weight: 700;
+}
+.account-app .main-wrap {
+  grid-column: 2;
+  min-width: 0;
+}
+.account-app .topbar {
+  height: 79px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.account-app .breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #9298a0;
+}
+.account-app .breadcrumb strong {
+  color: #606772;
+  font-weight: 500;
+}
+.account-app .top-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.account-app .top-date {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13.5px;
+  color: #777e88;
+}
+.account-app .demo-label {
+  font-size: 13px;
+  border: 1px solid #e9e9ed;
+  border-radius: 5px;
+  padding: 3px 7px;
+  color: #969ba2;
+  letter-spacing: 0.25px;
+  background: #fafafb;
+}
+.account-app .icon-btn {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  position: relative;
+  color: #7c838d;
+}
+.account-app .icon-btn:hover {
+  background: #f5f5f8;
+}
+.account-app .notification-dot {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: var(--orange);
+  box-shadow: 0 0 0 2px white;
+}
+.account-app .top-separator {
+  width: 1px;
+  height: 25px;
+  background: var(--line);
+}
+.account-app .mobile-menu {
+  display: none;
+}
+.account-app .page {
+  padding: 30px 32px 40px;
+  max-width: 1660px;
+  margin: 0 auto;
+}
+.account-app .page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+.account-app .page-heading p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 7px;
+}
+.account-app .heading-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.account-app .btn {
+  border: 1px solid #e1e4e8;
+  background: white;
+  color: #616974;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 650;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  line-height: 1.4;
+  transition: 0.15s;
+  white-space: nowrap;
+  min-height: 37px;
+}
+.account-app .btn:hover {
+  background: #f6f7f8;
+  border-color: #cdd1d7;
+}
+.account-app .btn.primary {
+  color: #fff;
+  background: var(--orange);
+  border-color: var(--orange);
+  box-shadow: 0 3px 4px #19678b12;
+}
+.account-app .btn.primary:hover {
+  background: var(--orange-dark);
+  border-color: var(--orange-dark);
+}
+.account-app .btn.soft {
+  background: var(--orange-soft);
+  border-color: var(--orange-soft);
+  color: var(--orange-dark);
+}
+.account-app .btn.danger {
+  color: var(--red);
+  border-color: #efd1d1;
+}
+.account-app .btn.green {
+  background: var(--green);
+  color: white;
+  border-color: var(--green);
+}
+.account-app .btn.link {
+  border: 0;
+  background: none;
+  color: var(--orange);
+  padding: 0;
+  min-height: 25px;
+  font-size: 13.5px;
+}
+.account-app .btn.full {
+  width: 100%;
+}
+.account-app .btn.square {
+  padding: 9px;
+}
+.account-app .toolbar-select {
+  appearance: none;
+  background: white
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%238b929c' stroke-width='1.5'%3E%3Cpath d='m4 5 3 3 3-3'/%3E%3C/svg%3E")
+    no-repeat right 10px center;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 13.5px;
+  color: #68717e;
+  padding: 10px 32px 10px 13px;
+  min-height: 37px;
+}
+.account-app .metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+.account-app .metric {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 19px 20px 17px;
+  position: relative;
+  min-width: 0;
+}
+.account-app .metric-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  color: #7d8590;
+  font-size: 13.5px;
+  margin-bottom: 14px;
+}
+.account-app .metric-icon {
+  width: 31px;
+  height: 31px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background: #eef6f9;
+  color: #5f92ad;
+}
+.account-app .metric:nth-child(2) .metric-icon {
+  background: #eef5fa;
+  color: #6c98be;
+}
+.account-app .metric:nth-child(3) .metric-icon {
+  background: #eff3f5;
+  color: #74929c;
+}
+.account-app .metric:nth-child(4) .metric-icon {
+  background: #f5effb;
+  color: #a18abd;
+}
+.account-app .metric-value {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #272d35;
+  font-variant-numeric: tabular-nums;
+}
+.account-app .metric-bottom {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 13px;
+  color: #9b9fa5;
+  margin-top: 11px;
+}
+.account-app .metric-bottom .positive {
+  color: #5e859c;
+  background: #f2f6f8;
+  border-radius: 4px;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 2px 4px;
+}
+.account-app .metric-spark {
+  position: absolute;
+  right: 16px;
+  bottom: 19px;
+  width: 63px;
+  opacity: 0.55;
+}
+.account-app .dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.95fr) minmax(260px, 1fr);
+  gap: 22px;
+  margin-bottom: 24px;
+}
+.account-app .panel {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  min-width: 0;
+}
+.account-app .panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 21px 22px 0;
+}
+.account-app .panel-head p {
+  font-size: 13px;
+  color: #9399a2;
+  margin-top: 5px;
+}
+.account-app .panel-body {
+  padding: 22px;
+}
+.account-app .chart-total {
+  padding: 18px 22px 0;
+  font-size: 23px;
+  font-weight: 750;
+  letter-spacing: -0.6px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.account-app .chart-total span {
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+.account-app .chart {
+  padding: 10px 16px 14px 14px;
+  height: 213px;
+}
+.account-app .chart svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.account-app .chart text {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 13px;
+  fill: #a1a6ad;
+}
+.account-app .chart .y-label {
+  text-anchor: end;
+}
+.account-app .chart .x-label {
+  text-anchor: middle;
+}
+.account-app .chart-grid {
+  stroke: #f0f1f4;
+  stroke-dasharray: 4 4;
+}
+.account-app .queue-panel {
+  padding: 21px 20px 18px;
+}
+.account-app .queue-panel > p {
+  font-size: 13px;
+  color: #9399a2;
+  margin-top: 5px;
+  margin-bottom: 17px;
+}
+.account-app .queue-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f2f3f5;
+  text-align: left;
+}
+.account-app .queue-row:last-of-type {
+  border-bottom: 0;
+}
+.account-app .queue-symbol {
+  height: 35px;
+  width: 35px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background: #eaf3f7;
+  color: var(--orange);
+}
+.account-app .queue-symbol.blue {
+  background: #eef4fb;
+  color: #7a99bc;
+}
+.account-app .queue-symbol.green {
+  background: #edf3f6;
+  color: #6d8fa4;
+}
+.account-app .queue-row strong {
+  font-size: 14px;
+}
+.account-app .queue-row p {
+  font-size: 13px;
+  color: #969da5;
+  margin-top: 2px;
+}
+.account-app .queue-row .quantity {
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+.account-app .queue-row > .icon {
+  color: #aeb3ba;
+  width: 14px;
+}
+.account-app .queue-panel .verify-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  border-color: #f0ded2;
+  color: var(--orange);
+  background: #fffcfa;
+}
+.account-app .table-panel {
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.account-app .table-panel .panel-head {
+  padding-bottom: 18px;
+}
+.account-app .table-wrap {
+  width: 100%;
+  overflow: auto;
+}
+.account-app table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
+  font-size: 13.5px;
+}
+.account-app th {
+  padding: 12px 20px;
+  background: #fbfcfd;
+  color: #969da6;
+  font-weight: 500;
+  border-top: 1px solid #f0f1f4;
+  border-bottom: 1px solid #f0f1f4;
+  font-size: 13px;
+}
+.account-app td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #f0f1f4;
+  color: #69717b;
+}
+.account-app tr:last-child td {
+  border-bottom: 0;
+}
+.account-app .food-cell {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.account-app .food-cell img {
+  width: 34px;
+  height: 34px;
+  border-radius: 7px;
+}
+.account-app .food-cell strong {
+  font-weight: 600;
+  color: #444c56;
+  font-size: 13.5px;
+}
+.account-app .food-cell p {
+  font-size: 13px;
+  color: #9ca2aa;
+  margin-top: 2px;
+}
+.account-app .order-id {
+  font-weight: 600;
+  color: #5b6370;
+}
+.account-app .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  padding: 4px 7px;
+  font-size: 12.5px;
+  line-height: 1.3;
+  font-weight: 600;
+  white-space: nowrap;
+  background: #f1f3f5;
+  color: #7f8793;
+}
+.account-app .badge i {
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 100%;
+}
+.account-app .badge.orange {
+  color: #d68645;
+  background: #fff4e6;
+}
+.account-app .badge.green {
+  color: #59829a;
+  background: #edf4f7;
+}
+.account-app .badge.blue {
+  color: #6a91bd;
+  background: #eef4fc;
+}
+.account-app .badge.purple {
+  color: #9a7abb;
+  background: #f6effb;
+}
+.account-app .badge.red {
+  color: #c57878;
+  background: #fcf0f0;
+}
+.account-app .row-action {
+  width: 25px;
+  height: 25px;
+  color: #a6adb6;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+}
+.account-app .row-action:hover {
+  background: #f5f6f8;
+  color: var(--orange);
+}
+.account-app .row-btn {
+  font-size: 13px;
+  color: var(--orange);
+  font-weight: 600;
+  padding: 5px 0;
+}
+.account-app .section-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+.account-app .section-row p {
+  color: var(--muted);
+  font-size: 13.5px;
+  margin-top: 4px;
+}
+.account-app .listing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.account-app .listing-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.account-app .listing-image {
+  position: relative;
+  height: 143px;
+  background: #edf4f8;
+  overflow: hidden;
+}
+.account-app .listing-image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s;
+}
+.account-app .listing-card:hover .listing-image img {
+  transform: scale(1.04);
+}
+.account-app .listing-image .badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: white;
+  box-shadow: 0 2px 8px #00000010;
+}
+.account-app .discount {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: #ffffffec;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--orange);
+  padding: 4px 7px;
+}
+.account-app .listing-body {
+  padding: 15px 16px 14px;
+}
+.account-app .listing-title {
+  display: flex;
+  gap: 6px;
+  justify-content: space-between;
+  align-items: center;
+}
+.account-app .listing-title h3 {
+  font-size: 14.5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.account-app .price {
+  font-size: 16px;
+  font-weight: 750;
+  color: var(--orange);
+  margin-top: 8px;
+}
+.account-app .price del {
+  font-weight: 400;
+  font-size: 13px;
+  color: #a8acb2;
+  margin-left: 6px;
+}
+.account-app .listing-time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #a0a5ad;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.account-app .stock-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+  color: #9ca3ab;
+  margin-top: 15px;
+}
+.account-app .stock-meta strong {
+  color: #78878b;
+  font-weight: 600;
+}
+.account-app .progress {
+  height: 4px;
+  border-radius: 5px;
+  background: #eff2f3;
+  overflow: hidden;
+  margin-top: 6px;
+}
+.account-app .progress span {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background: #a6bdc3;
+}
+.account-app .listing-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f1f4;
+  font-size: 13px;
+  color: #979fa6;
+}
+.account-app .page-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 13px;
+  color: #a1a7b0;
+  margin-top: 28px;
+}
+.account-app .page-foot a {
+  color: #8b929c;
+}
+.account-app .demo-note {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #a0a6ae;
+  font-size: 13px;
+}
+.account-app .filterbar {
+  padding: 17px 20px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.account-app .search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: white;
+  border: 1px solid #e4e7eb;
+  border-radius: 8px;
+  padding: 9px 12px;
+  min-width: 220px;
+}
+.account-app .search .icon {
+  width: 15px;
+  color: #a1a8b1;
+}
+.account-app .search input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  min-width: 0;
+  width: 100%;
+  font-size: 13.5px;
+  color: #5d6571;
+}
+.account-app .search input::placeholder {
+  color: #a5abb3;
+}
+.account-app .filter-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.account-app .tabs {
+  display: flex;
+  gap: 23px;
+  overflow: auto;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+.account-app .tab {
+  padding: 16px 0 13px;
+  color: #8d95a0;
+  font-size: 13.5px;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.account-app .tab.active {
+  border-color: var(--orange);
+  color: var(--orange);
+  font-weight: 700;
+}
+.account-app .tab-count {
+  font-size: 12.5px;
+  border-radius: 4px;
+  background: #f1f3f5;
+  padding: 0 5px;
+  color: #969da5;
+}
+.account-app .tab.active .tab-count {
+  background: var(--orange-soft);
+  color: var(--orange);
+}
+.account-app .info-bar {
+  background: #fff8f1;
+  border: 1px solid #f6e7d7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 17px;
+  margin-bottom: 20px;
+  font-size: 13.5px;
+  color: #aa825e;
+}
+.account-app .info-bar .icon {
+  color: #d49a60;
+}
+.account-app .info-bar strong {
+  color: #91623a;
+}
+.account-app .info-bar.success {
+  background: #f1f5f8;
+  border-color: #dee9ee;
+  color: #6d8491;
+}
+.account-app .info-bar.success strong {
+  color: #506f80;
+}
+.account-app .info-bar .btn {
+  margin-left: auto;
+}
+.account-app .empty {
+  padding: 65px 25px;
+  text-align: center;
+  color: var(--muted);
+}
+.account-app .empty-icon {
+  display: grid;
+  place-items: center;
+  margin: 0 auto 15px;
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+  background: var(--orange-soft);
+  color: var(--orange);
+}
+.account-app .empty h3 {
+  color: #5e6672;
+  margin-bottom: 7px;
+}
+.account-app .empty p {
+  font-size: 14px;
+  max-width: 350px;
+  margin: 0 auto 18px;
+}
+.account-app .table-foot {
+  border-top: 1px solid var(--line);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #9aa1ab;
+  font-size: 13px;
+}
+.account-app .catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.account-app .catalogue-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: white;
+}
+.account-app .catalogue-card > img {
+  height: 145px;
+  width: 100%;
+  background: #eaf2f7;
+}
+.account-app .catalogue-card .body {
+  padding: 15px;
+}
+.account-app .catalogue-card h3 {
+  font-size: 14px;
+}
+.account-app .catalogue-card .body > p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+.account-app .catalogue-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13px;
+  gap: 8px;
+}
+.account-app .catalogue-bottom span {
+  font-size: 13.5px;
+  font-weight: 700;
+}
+.account-app .catalogue-bottom .btn {
+  font-size: 13px;
+  padding: 6px 8px;
+  min-height: 30px;
+}
+.account-app .content-filter {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.account-app .pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.account-app .pill {
+  font-size: 13px;
+  padding: 7px 11px;
+  border-radius: 7px;
+  background: #fff;
+  border: 1px solid var(--line);
+  color: #8a929e;
+}
+.account-app .pill.active {
+  background: var(--orange-soft);
+  color: var(--orange);
+  border-color: #f4dacb;
+}
+.account-app .two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(280px, 1fr);
+  gap: 22px;
+}
+.account-app .form-panel {
+  padding: 24px;
+}
+.account-app .form-panel h2 {
+  margin-bottom: 5px;
+}
+.account-app .form-panel > p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-bottom: 23px;
+}
+.account-app .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.account-app .field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+.account-app .field.full {
+  grid-column: 1/-1;
+}
+.account-app .field label {
+  font-size: 13.5px;
+  color: #69717d;
+  font-weight: 600;
+}
+.account-app .field label span {
+  font-weight: 400;
+  color: #a0a7b0;
+}
+.account-app .field input,
+.account-app .field select,
+.account-app .field textarea {
+  width: 100%;
+  background: white;
+  border: 1px solid #e1e5e9;
+  border-radius: 7px;
+  padding: 10px 11px;
+  font-size: 14px;
+  color: #636c78;
+  min-height: 40px;
+  outline-offset: 2px;
+}
+.account-app .field textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.account-app .field input[readonly],
+.account-app .field select:disabled {
+  background: #f8f9fb;
+  color: #939ba7;
+}
+.account-app .field small {
+  font-size: 13px;
+  color: #9ba2ad;
+}
+.account-app .field-error {
+  font-size: 13.5px;
+  color: var(--red);
+}
+.account-app .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  grid-column: 1/-1;
+  margin-top: 5px;
+}
+.account-app .preview-shop {
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  border: 1px solid var(--line);
+}
+.account-app .shop-cover {
+  height: 155px;
+  width: 100%;
+  object-fit: cover;
+}
+.account-app .shop-card-content {
+  padding: 20px;
+}
+.account-app .shop-large-avatar {
+  background: #e8f1f7;
+  color: #557690;
+  border: 4px solid white;
+  margin-top: -45px;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  font-size: 24px;
+  border-radius: 13px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  margin-bottom: 12px;
+}
+.account-app .shop-card-content h2 {
+  font-size: 18px;
+}
+.account-app .shop-card-content p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+.account-app .detail-line {
+  display: flex;
+  gap: 9px;
+  margin: 13px 0;
+  font-size: 13.5px;
+  color: #848d99;
+}
+.account-app .detail-line .icon {
+  width: 15px;
+  height: 15px;
+}
+.account-app .divided {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+.account-app .settlement-grid {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+.account-app .balance-card {
+  background: #1b3746;
+  color: white;
+  padding: 25px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+.account-app .balance-card:before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 36px solid #ffffff05;
+  right: -45px;
+  top: -65px;
+  border-radius: 100%;
+}
+.account-app .balance-card p {
+  color: #a8b7c0;
+  font-size: 13.5px;
+}
+.account-app .balance-amount {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 39px;
+  font-weight: 750;
+  letter-spacing: -1.5px;
+  margin: 10px 0 4px;
+}
+.account-app .balance-card .balance-caption {
+  font-size: 13px;
+  color: #a5b4bd;
+  max-width: 80%;
+}
+.account-app .balance-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #ffffff17;
+  padding-top: 18px;
+  margin-top: 22px;
+}
+.account-app .balance-split span {
+  display: block;
+  font-size: 13px;
+  color: #aab9c2;
+}
+.account-app .balance-split strong {
+  font-size: 17px;
+  display: block;
+  margin-top: 3px;
+  font-weight: 600;
+}
+.account-app .breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 23px;
+}
+.account-app .breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #8a929e;
+  font-size: 13.5px;
+}
+.account-app .breakdown-row strong {
+  color: #616a76;
+  font-weight: 600;
+}
+.account-app .breakdown-row.total {
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+  color: #56616e;
+  font-weight: 700;
+}
+.account-app .notice {
+  padding: 13px 15px;
+  border-radius: 8px;
+  background: #f8f9fb;
+  font-size: 13.5px;
+  color: #919aa5;
+  margin-bottom: 18px;
+  display: flex;
+  gap: 10px;
+}
+.account-app .notification-item {
+  display: flex;
+  gap: 15px;
+  padding: 22px;
+  border-bottom: 1px solid var(--line);
+  align-items: flex-start;
+}
+.account-app .notification-item:last-child {
+  border-bottom: 0;
+}
+.account-app .notification-item.unread {
+  background: #fffdf9;
+}
+.account-app .notification-item .circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: var(--orange-soft);
+  color: var(--orange);
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+.account-app .notification-item h3 {
+  font-size: 14px;
+}
+.account-app .notification-item p {
+  color: var(--muted);
+  font-size: 13.5px;
+  margin: 5px 0 7px;
+  max-width: 650px;
+}
+.account-app .notification-item .meta {
+  margin-left: auto;
+  font-size: 13px;
+  color: #a4aab2;
+  white-space: nowrap;
+}
+.account-app .notification-item button {
+  font-size: 13px;
+  color: var(--orange);
+  padding: 0;
+}
+.account-app .stepper {
+  display: flex;
+  gap: 0;
+  margin: 0 0 25px;
+}
+.account-app .step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  color: #acb2bb;
+  font-size: 13.5px;
+}
+.account-app .step .number {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #e4e8ed;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  background: white;
+}
+.account-app .step:after {
+  content: "";
+  height: 1px;
+  background: #e4e8ec;
+  flex: 1;
+  margin: 0 10px;
+}
+.account-app .step:last-child:after {
+  display: none;
+}
+.account-app .step.done {
+  color: var(--green);
+}
+.account-app .step.done .number {
+  background: #ecf6fa;
+  color: var(--green);
+  border-color: #ecf6fa;
+}
+.account-app .upload {
+  border: 1px dashed #dcdfe5;
+  border-radius: 10px;
+  background: #fcfcfd;
+  padding: 24px;
+  text-align: center;
+  color: #99a1ab;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13.5px;
+}
+.account-app .upload input {
+  max-width: 100%;
+  font-size: 13px;
+}
+.account-app .document-row {
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--line);
+}
+.account-app .document-row:last-child {
+  border-bottom: 0;
+}
+.account-app .document-row strong {
+  font-size: 13.5px;
+  display: block;
+  color: #68717e;
+}
+.account-app .document-row p {
+  font-size: 13px;
+  color: #9ca4af;
+}
+.account-app .document-row .badge {
+  margin-left: auto;
+}
+.account-app .status-hero {
+  padding: 23px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.account-app .status-hero .round {
+  width: 47px;
+  height: 47px;
+  background: var(--green-soft);
+  color: var(--green);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+.account-app .status-hero h2 {
+  font-size: 16px;
+}
+.account-app .status-hero p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.account-app .status-hero .badge {
+  margin-left: auto;
+}
+.account-app .settings-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 19px 0;
+  border-bottom: 1px solid var(--line);
+}
+.account-app .settings-row:last-child {
+  border: 0;
+}
+.account-app .settings-row h3 {
+  font-size: 14px;
+}
+.account-app .settings-row p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.account-app .settings-row > button,
+.account-app .settings-row > .switch,
+.account-app .settings-row > select {
+  margin-left: auto;
+}
+.account-app .switch {
+  position: relative;
+  width: 34px;
+  height: 20px;
+  background: #e5e8ec;
+  border-radius: 50px;
+  padding: 0;
+  flex: none;
+}
+.account-app .switch:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px #0001;
+  transition: 0.15s;
+}
+.account-app .switch.on {
+  background: var(--orange);
+}
+.account-app .switch.on:after {
+  left: 17px;
+}
+.account-app .case-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 19px 22px;
+  border-bottom: 1px solid var(--line);
+  width: 100%;
+  text-align: left;
+}
+.account-app .case-row:last-child {
+  border-bottom: 0;
+}
+.account-app .case-row:hover {
+  background: #fdfdfd;
+}
+.account-app .case-row h3 {
+  font-size: 14px;
+}
+.account-app .case-row p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+.account-app .case-row .badge {
+  margin-left: auto;
+}
+.account-app .faq {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.account-app .faq summary {
+  cursor: pointer;
+  color: #68717d;
+  font-weight: 600;
+  list-style: none;
+}
+.account-app .faq summary:after {
+  content: "+";
+  float: right;
+  font-size: 16px;
+  font-weight: 400;
+  color: #a4adb6;
+}
+.account-app .faq[open] summary:after {
+  content: "−";
+}
+.account-app .faq p {
+  padding-top: 12px;
+  line-height: 1.8;
+}
+.account-app .overlay {
+  position: fixed;
+  inset: 0;
+  background: #20293442;
+  z-index: 60;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  animation: fade 0.15s ease-out;
+}
+.account-app .modal {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 80px #1a202b30;
+  width: 600px;
+  max-width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.account-app .modal.wide {
+  width: 760px;
+}
+.account-app .modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 24px 25px 18px;
+  border-bottom: 1px solid var(--line);
+}
+.account-app .modal-head h2 {
+  font-size: 19px;
+}
+.account-app .modal-head p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.account-app .modal-body {
+  padding: 23px 25px;
+  overflow: auto;
+}
+.account-app .modal-footer {
+  padding: 17px 25px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  background: #fcfcfd;
+}
+.account-app .error-banner {
+  background: #fcf0f0;
+  color: #b65f5f;
+  padding: 11px 14px;
+  margin-bottom: 16px;
+  font-size: 13.5px;
+  border-radius: 7px;
+  display: none;
+}
+.account-app .error-banner.visible {
+  display: block;
+}
+.account-app .drawer-overlay {
+  justify-content: flex-end;
+  padding: 0;
+}
+.account-app .drawer {
+  height: 100%;
+  max-height: 100%;
+  width: 525px;
+  border-radius: 16px 0 0 16px;
+  animation: slide 0.2s ease-out;
+}
+.account-app .drawer .modal-body {
+  flex: 1;
+}
+.account-app .order-status-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.account-app .order-food {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: #fafbfc;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.account-app .order-food img {
+  width: 62px;
+  height: 62px;
+  border-radius: 10px;
+}
+.account-app .order-food h3 {
+  font-size: 14.5px;
+}
+.account-app .order-food p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.account-app .order-food strong {
+  margin-left: auto;
+  font-size: 14.5px;
+}
+.account-app .detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 23px;
+}
+.account-app .detail-grid p {
+  font-size: 13px;
+  color: #9aa2ad;
+  margin-bottom: 4px;
+}
+.account-app .detail-grid strong {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #65707e;
+}
+.account-app .summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 13.5px;
+  color: #8a939e;
+}
+.account-app .summary-list > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.account-app .summary-list strong {
+  color: #5c6673;
+  font-weight: 600;
+}
+.account-app .summary-list .total {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: #5c6673;
+  font-weight: 700;
+}
+.account-app .timeline {
+  margin: 17px 0 3px;
+  padding: 0;
+  list-style: none;
+}
+.account-app .timeline li {
+  font-size: 13.5px;
+  color: #7e8995;
+  position: relative;
+  padding: 0 0 18px 22px;
+  border-left: 1px solid #e3e9eb;
+  margin-left: 5px;
+}
+.account-app .timeline li:last-child {
+  border: 0;
+  padding-bottom: 0;
+}
+.account-app .timeline li:before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #96abb5;
+  box-shadow: 0 0 0 3px white;
+}
+.account-app .collection-hero {
+  padding: 18px 0 23px;
+  text-align: center;
+}
+.account-app .scan-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  background: var(--orange-soft);
+  color: var(--orange);
+  display: grid;
+  place-items: center;
+  margin: 0 auto 14px;
+}
+.account-app .scan-icon svg {
+  width: 37px;
+  height: 37px;
+}
+.account-app .code-input {
+  font-family: "Roboto", Arial, sans-serif !important;
+  font-size: 28px !important;
+  letter-spacing: 12px;
+  text-align: center;
+  padding: 13px !important;
+}
+.account-app .demo-code {
+  font-size: 13.5px;
+  color: #b99a7f;
+  background: #fff8f0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-top: 13px;
+  text-align: center;
+}
+.account-app .camera-box video {
+  width: 100%;
+  height: 220px;
+  background: #19678b;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.account-app .success-state {
+  text-align: center;
+  padding: 20px 0;
+}
+.account-app .success-mark {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--green-soft);
+  color: var(--green);
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+}
+.account-app .success-state h2 {
+  font-size: 22px;
+}
+.account-app .success-state p {
+  color: var(--muted);
+  font-size: 14px;
+  max-width: 360px;
+  margin: 10px auto 0;
+}
+.account-app .success-state .receipt {
+  padding: 20px;
+  margin-top: 22px;
+  border-top: 1px dashed #e3e6e9;
+  border-bottom: 1px dashed #e3e6e9;
+  font-size: 14px;
+  color: #8a939d;
+}
+.account-app .customer-preview img {
+  width: 100%;
+  height: 210px;
+  border-radius: 11px;
+}
+.account-app .customer-preview .details {
+  margin-top: 17px;
+}
+.account-app .customer-preview .details > p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 9px 0;
+}
+.account-app .customer-preview .price {
+  font-size: 24px;
+}
+.account-app .message {
+  padding: 13px 15px;
+  background: #f6f7fa;
+  border-radius: 9px;
+  margin: 13px 0;
+  font-size: 14px;
+  color: #7e8895;
+}
+.account-app .message.you {
+  background: #fff4eb;
+  margin-left: 25px;
+}
+.account-app .message small {
+  display: block;
+  font-weight: 700;
+  font-size: 13px;
+  color: #9c9ea7;
+  margin-bottom: 5px;
+}
+.account-app .auth-wrap {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+}
+.account-app .auth-story {
+  background: #e6f1f7;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 55px;
+  overflow: hidden;
+}
+.account-app .auth-story:before {
+  content: "";
+  position: absolute;
+  inset: 40% 0 0;
+  background:
+    linear-gradient(0deg, #49342280, transparent),
+    url("/assets/croissant.jpg") center/cover;
+}
+.account-app .auth-story .brand {
+  position: relative;
+}
+.account-app .auth-story .story-copy {
+  position: relative;
+  color: white;
+  padding-bottom: 20px;
+}
+.account-app .story-copy h1 {
+  font-size: 43px;
+  max-width: 470px;
+  letter-spacing: -1.8px;
+}
+.account-app .story-copy p {
+  font-size: 14.5px;
+  line-height: 1.9;
+  max-width: 380px;
+  margin-top: 18px;
+  color: #fffdf2df;
+}
+.account-app .auth-form-wrap {
+  padding: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account-app .auth-form {
+  width: 400px;
+  max-width: 100%;
+}
+.account-app .auth-form h1 {
+  font-size: 27px;
+}
+.account-app .auth-form > p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 10px 0 27px;
+}
+.account-app .auth-form .field {
+  margin-bottom: 16px;
+}
+.account-app .auth-form .below {
+  font-size: 13.5px;
+  color: #939ba5;
+  margin-top: 20px;
+  text-align: center;
+}
+.account-app .auth-form .below button {
+  color: var(--orange);
+  font-weight: 650;
+}
+.account-app .auth-form .form-error {
+  color: var(--red);
+  font-size: 13.5px;
+  margin-bottom: 15px;
+}
+.account-app .auth-foot {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  color: #adb2ba;
+  text-align: center;
+}
+.account-app .checkbox-label {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  font-size: 13.5px;
+  color: #8e97a2;
+  margin-bottom: 20px;
+}
+.account-app .checkbox-label input {
+  accent-color: var(--orange);
+  margin: 2px 0 0;
+}
+.account-app .success-banner {
+  background: #f0f5f8;
+  border: 1px solid #dce8ee;
+  color: #6d8999;
+  border-radius: 9px;
+  padding: 13px;
+  font-size: 13.5px;
+  margin: 17px 0;
+}
+.account-app #toast {
+  position: fixed;
+  bottom: 25px;
+  left: calc(50% + 100px);
+  transform: translate(-50%, 20px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100;
+  background: #1e3a48;
+  color: white;
+  border-radius: 10px;
+  padding: 13px 19px;
+  box-shadow: var(--shadow);
+  font-size: 14px;
+  transition: 0.2s;
+  max-width: 90vw;
+}
+.account-app #toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.account-app #toast.error {
+  background: #8f4747;
+}
+.account-app .mobile-backdrop {
+  display: none;
+}
+.account-app .kpi-label {
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.account-app .report-summary {
+  padding: 22px 0 10px;
+  font-size: 14px;
+  color: #8c95a0;
+}
+.account-app .verified-note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #8998a0;
+  margin-top: 7px;
+}
+.account-app .loading-photo {
+  background: #f1ede6;
+}
+.account-app .no-scroll {
+  overflow: hidden;
+}
+@keyframes slide {
+  from {
+    transform: translateX(40px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 1550px) {
+  .account-app .page {
+    padding: 36px 45px 45px;
+  }
+  .account-app .topbar {
+    padding: 0 45px;
+  }
+  .account-app .listing-image {
+    height: 180px;
+  }
+  .account-app .metric {
+    padding: 22px;
+  }
+  .account-app .dashboard-grid {
+    grid-template-columns: minmax(0, 2.15fr) minmax(285px, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  .account-app .sidebar {
+    width: 212px;
+    padding: 25px 13px 15px;
+  }
+  .account-app .layout {
+    grid-template-columns: 212px minmax(0, 1fr);
+  }
+  .account-app .brand {
+    font-size: 22px;
+  }
+  .account-app .page {
+    padding: 26px 24px;
+  }
+  .account-app .topbar {
+    padding: 0 24px;
+  }
+  .account-app .nav-link {
+    font-size: 14px;
+    padding: 10px 11px;
+  }
+  .account-app .metrics {
+    gap: 12px;
+  }
+  .account-app .metric {
+    padding: 16px;
+  }
+  .account-app .metric-value {
+    font-size: 24px;
+  }
+  .account-app .metric-top {
+    font-size: 13px;
+  }
+  .account-app .metric-spark {
+    display: none;
+  }
+  .account-app .dashboard-grid {
+    gap: 18px;
+    grid-template-columns: minmax(0, 1.7fr) minmax(245px, 1fr);
+  }
+  .account-app .catalogue-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .account-app .top-actions {
+    gap: 13px;
+  }
+  .account-app .two-col {
+    grid-template-columns: minmax(0, 1.5fr) minmax(250px, 1fr);
+  }
+  .account-app .listing-grid {
+    gap: 14px;
+  }
+  .account-app .listing-image {
+    height: 128px;
+  }
+  .account-app .listing-time {
+    font-size: 12.5px;
+  }
+  .account-app th,
+  .account-app td {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 960px) {
+  .account-app .layout {
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+  .account-app .sidebar {
+    width: 190px;
+    padding: 23px 10px 15px;
+  }
+  .account-app .shop-switch {
+    padding: 9px 7px;
+  }
+  .account-app .shop-switch .shop-name {
+    max-width: 120px;
+    font-size: 13.5px;
+  }
+  .account-app .shop-avatar {
+    width: 28px;
+    height: 28px;
+  }
+  .account-app .brand {
+    font-size: 21px;
+    gap: 7px;
+  }
+  .account-app .brand-mark {
+    width: 32px;
+    height: 32px;
+    font-size: 25px;
+    border-radius: 10px;
+  }
+  .account-app .merchant-label {
+    margin-left: 39px;
+    font-size: 12px;
+  }
+  .account-app .nav-link {
+    font-size: 13.5px;
+    gap: 9px;
+    padding: 10px;
+  }
+  .account-app .nav-link .icon {
+    width: 17px;
+    height: 17px;
+  }
+  .account-app .page {
+    padding: 24px 20px;
+  }
+  .account-app .topbar {
+    padding: 0 20px;
+  }
+  .account-app .top-date {
+    display: none;
+  }
+  .account-app .page-heading {
+    align-items: flex-start;
+  }
+  .account-app h1 {
+    font-size: 24px;
+  }
+  .account-app .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .account-app .queue-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .account-app .queue-panel h2,
+  .account-app .queue-panel > p {
+    grid-column: 1/-1;
+    margin-bottom: 0;
+  }
+  .account-app .queue-row {
+    border: 0;
+  }
+  .account-app .queue-row > .icon {
+    display: none;
+  }
+  .account-app .queue-panel .verify-btn {
+    grid-column: 1/-1;
+    margin-top: 0;
+  }
+  .account-app .queue-row .quantity {
+    font-size: 18px;
+  }
+  .account-app .listing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .account-app .dashboard-listings .listing-card:last-child {
+    display: none;
+  }
+  .account-app .metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .account-app .two-col,
+  .account-app .settlement-grid {
+    grid-template-columns: 1fr;
+  }
+  .account-app .preview-shop {
+    display: none;
+  }
+  .account-app .catalogue-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .account-app .heading-actions .toolbar-select {
+    display: none;
+  }
+  .account-app .sidebar-bottom .help-card {
+    display: none;
+  }
+  .account-app .chart {
+    height: 230px;
+  }
+  .account-app .metric-top {
+    font-size: 13.5px;
+  }
+  .account-app .metric-value {
+    font-size: 26px;
+  }
+  .account-app .auth-story {
+    padding: 35px;
+  }
+  .account-app .story-copy h1 {
+    font-size: 32px;
+  }
+  .account-app .auth-form-wrap {
+    padding: 30px;
+  }
+  .account-app #toast {
+    left: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .account-app .layout {
+    display: block;
+  }
+  .account-app .sidebar {
+    transform: translateX(-100%);
+    width: 240px;
+    transition: transform 0.2s;
+  }
+  .account-app .sidebar.open {
+    transform: translateX(0);
+  }
+  .account-app .mobile-backdrop.open {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #20293450;
+    z-index: 29;
+  }
+  .account-app .main-wrap {
+    width: 100%;
+  }
+  .account-app .topbar {
+    height: 63px;
+    padding: 0 17px;
+  }
+  .account-app .mobile-menu {
+    display: grid;
+  }
+  .account-app .breadcrumb {
+    gap: 7px;
+    font-size: 13.5px;
+  }
+  .account-app .breadcrumb > span:first-child {
+    display: none;
+  }
+  .account-app .breadcrumb > .crumb-arrow {
+    display: none;
+  }
+  .account-app .top-actions {
+    gap: 7px;
+  }
+  .account-app .top-actions .top-separator {
+    display: none;
+  }
+  .account-app .top-actions .avatar {
+    width: 29px;
+    height: 29px;
+    font-size: 13px;
+  }
+  .account-app .demo-label {
+    font-size: 12.5px;
+    padding: 3px 5px;
+  }
+  .account-app .page {
+    padding: 23px 17px 28px;
+  }
+  .account-app .page-heading {
+    margin-bottom: 21px;
+    gap: 12px;
+  }
+  .account-app .page-heading h1 {
+    font-size: 22px;
+    letter-spacing: -0.6px;
+  }
+  .account-app .page-heading p {
+    font-size: 13.5px;
+    max-width: 240px;
+  }
+  .account-app .heading-actions .btn {
+    font-size: 13px;
+    padding: 9px 10px;
+  }
+  .account-app .heading-actions .btn .optional {
+    display: none;
+  }
+  .account-app .metrics {
+    gap: 11px;
+    margin-bottom: 18px;
+  }
+  .account-app .metric {
+    padding: 15px;
+    min-height: 132px;
+  }
+  .account-app .metric-value {
+    font-size: 24px;
+  }
+  .account-app .metric-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 7px;
+  }
+  .account-app .metric-icon .icon {
+    width: 16px;
+    height: 16px;
+  }
+  .account-app .metric-top {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+  .account-app .metric-bottom {
+    font-size: 12.5px;
+    gap: 3px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .account-app .metric-bottom .positive {
+    font-size: 12px;
+  }
+  .account-app .dashboard-grid {
+    gap: 18px;
+    margin-bottom: 19px;
+  }
+  .account-app .panel-head {
+    padding: 18px 16px 0;
+  }
+  .account-app .panel-head h2 {
+    font-size: 16px;
+  }
+  .account-app .panel-head p {
+    font-size: 12.5px;
+  }
+  .account-app .panel-head .toolbar-select {
+    font-size: 13px;
+    padding-left: 9px;
+  }
+  .account-app .chart-total {
+    padding: 17px 16px 0;
+    font-size: 22px;
+  }
+  .account-app .chart {
+    height: 190px;
+    padding-right: 8px;
+    padding-left: 7px;
+  }
+  .account-app .queue-panel {
+    padding: 18px 16px;
+    grid-template-columns: 1fr;
+  }
+  .account-app .queue-panel > p {
+    margin-bottom: 5px;
+  }
+  .account-app .queue-row {
+    border-bottom: 1px solid #f1f2f5;
+    padding: 9px 0;
+  }
+  .account-app .queue-row > .icon {
+    display: block;
+  }
+  .account-app .queue-row strong {
+    font-size: 13.5px;
+  }
+  .account-app .queue-row p {
+    font-size: 13px;
+  }
+  .account-app .queue-row .quantity {
+    font-size: 21px;
+    margin-right: 5px;
+  }
+  .account-app .queue-symbol {
+    width: 32px;
+    height: 32px;
+  }
+  .account-app .queue-panel .verify-btn {
+    margin-top: 8px;
+  }
+  .account-app .listing-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 11px;
+  }
+  .account-app .listing-image {
+    height: 120px;
+  }
+  .account-app .listing-body {
+    padding: 12px 11px;
+  }
+  .account-app .listing-title h3 {
+    font-size: 13.5px;
+  }
+  .account-app .listing-title > .icon-btn {
+    display: none;
+  }
+  .account-app .listing-time {
+    font-size: 12.5px;
+    gap: 3px;
+  }
+  .account-app .listing-time svg {
+    width: 12px;
+  }
+  .account-app .price {
+    font-size: 15px;
+  }
+  .account-app .listing-footer {
+    font-size: 12.5px;
+  }
+  .account-app .listing-footer .btn.link {
+    font-size: 12.5px;
+  }
+  .account-app .listing-image .badge {
+    left: 8px;
+    top: 8px;
+    font-size: 12px;
+    padding: 3px 5px;
+  }
+  .account-app .discount {
+    right: 8px;
+    top: 8px;
+    font-size: 12px;
+    padding: 3px 4px;
+  }
+  .account-app .stock-meta {
+    font-size: 12.5px;
+  }
+  .account-app .section-row h2 {
+    font-size: 16px;
+  }
+  .account-app .section-row p {
+    font-size: 13px;
+  }
+  .account-app .page-foot {
+    display: block;
+    font-size: 12.5px;
+    margin-top: 24px;
+  }
+  .account-app .page-foot > .demo-note {
+    margin-top: 6px;
+    font-size: 12.5px;
+  }
+  .account-app .table-panel .panel-head {
+    padding-bottom: 16px;
+  }
+  .account-app th,
+  .account-app td {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .account-app .table-foot {
+    padding: 13px 15px;
+    font-size: 12.5px;
+  }
+  .account-app .filterbar {
+    padding: 14px 15px;
+  }
+  .account-app .search {
+    min-width: 0;
+    width: 100%;
+    padding: 9px 11px;
+  }
+  .account-app .filterbar > .search {
+    flex: 1;
+    min-width: 180px;
+  }
+  .account-app .filter-group .btn,
+  .account-app .filter-group .toolbar-select {
+    font-size: 13px;
+    min-height: 33px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .account-app .tabs {
+    padding: 0 15px;
+    gap: 20px;
+  }
+  .account-app .tab {
+    font-size: 13px;
+    padding-top: 14px;
+  }
+  .account-app .info-bar {
+    font-size: 13px;
+    padding: 12px;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .account-app .info-bar .btn {
+    min-height: 28px;
+    padding: 6px 9px;
+    font-size: 12.5px;
+  }
+  .account-app .info-bar > .icon {
+    width: 17px;
+    height: 17px;
+  }
+  .account-app .catalogue-grid {
+    gap: 12px;
+  }
+  .account-app .catalogue-card > img {
+    height: 130px;
+  }
+  .account-app .catalogue-card .body {
+    padding: 12px;
+  }
+  .account-app .catalogue-card h3 {
+    font-size: 13.5px;
+    min-height: 33px;
+  }
+  .account-app .catalogue-card .body > p {
+    font-size: 12.5px;
+  }
+  .account-app .catalogue-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 9px;
+  }
+  .account-app .catalogue-bottom .btn {
+    width: 100%;
+  }
+  .account-app .catalogue-bottom span {
+    font-size: 13px;
+  }
+  .account-app .content-filter {
+    gap: 12px;
+  }
+  .account-app .content-filter > .search {
+    order: 2;
+  }
+  .account-app .pills {
+    gap: 4px;
+  }
+  .account-app .pill {
+    font-size: 12.5px;
+    padding: 7px 9px;
+  }
+  .account-app .two-col {
+    gap: 16px;
+  }
+  .account-app .form-panel {
+    padding: 19px 16px;
+  }
+  .account-app .form-grid {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  .account-app .field.full {
+    grid-column: auto;
+  }
+  .account-app .form-actions {
+    grid-column: auto;
+    flex-wrap: wrap;
+  }
+  .account-app .field label {
+    font-size: 13.5px;
+  }
+  .account-app .form-panel h2 {
+    font-size: 16px;
+  }
+  .account-app .balance-card {
+    padding: 22px;
+  }
+  .account-app .balance-amount {
+    font-size: 33px;
+  }
+  .account-app .settlement-grid {
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+  .account-app .breakdown {
+    padding: 19px;
+  }
+  .account-app .notification-item {
+    padding: 17px 15px;
+    gap: 10px;
+  }
+  .account-app .notification-item .circle {
+    width: 31px;
+    height: 31px;
+    border-radius: 8px;
+  }
+  .account-app .notification-item .circle svg {
+    width: 16px;
+    height: 16px;
+  }
+  .account-app .notification-item h3 {
+    font-size: 13.5px;
+  }
+  .account-app .notification-item p {
+    font-size: 13px;
+  }
+  .account-app .notification-item .meta {
+    font-size: 12.5px;
+    white-space: normal;
+    min-width: 45px;
+    text-align: right;
+  }
+  .account-app .status-hero {
+    padding: 18px;
+    align-items: flex-start;
+  }
+  .account-app .status-hero .round {
+    width: 34px;
+    height: 34px;
+  }
+  .account-app .status-hero h2 {
+    font-size: 15px;
+  }
+  .account-app .status-hero p {
+    font-size: 13px;
+  }
+  .account-app .status-hero .badge {
+    display: none;
+  }
+  .account-app .step {
+    font-size: 12.5px;
+    gap: 4px;
+    flex-direction: column;
+  }
+  .account-app .step:after {
+    display: none;
+  }
+  .account-app .step .number {
+    width: 23px;
+    height: 23px;
+  }
+  .account-app .settings-row p {
+    font-size: 13px;
+  }
+  .account-app .settings-row h3 {
+    font-size: 13.5px;
+  }
+  .account-app .settings-row .btn {
+    font-size: 12.5px;
+    padding: 7px 9px;
+  }
+  .account-app .case-row {
+    padding: 17px 15px;
+    gap: 10px;
+  }
+  .account-app .case-row .icon {
+    width: 17px;
+    height: 17px;
+  }
+  .account-app .case-row h3 {
+    font-size: 13.5px;
+  }
+  .account-app .case-row .badge {
+    font-size: 12px;
+  }
+  .account-app .overlay {
+    padding: 12px;
+  }
+  .account-app .modal {
+    max-height: 94vh;
+    border-radius: 12px;
+  }
+  .account-app .modal-head {
+    padding: 20px 18px 15px;
+  }
+  .account-app .modal-head h2 {
+    font-size: 17px;
+  }
+  .account-app .modal-body {
+    padding: 19px 18px;
+  }
+  .account-app .modal-footer {
+    padding: 14px 18px;
+    flex-wrap: wrap;
+  }
+  .account-app .modal-footer .btn {
+    font-size: 13.5px;
+  }
+  .account-app .drawer-overlay {
+    padding: 0;
+  }
+  .account-app .drawer {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+  .account-app .order-food img {
+    width: 53px;
+    height: 53px;
+  }
+  .account-app .order-food h3 {
+    font-size: 14px;
+  }
+  .account-app .order-food strong {
+    font-size: 14px;
+  }
+  .account-app .detail-grid {
+    gap: 15px;
+  }
+  .account-app .auth-wrap {
+    display: block;
+  }
+  .account-app .auth-story {
+    padding: 25px;
+    background: #eef6fa;
+  }
+  .account-app .auth-story:before {
+    display: none;
+  }
+  .account-app .auth-story .story-copy {
+    display: none;
+  }
+  .account-app .auth-form-wrap {
+    padding: 35px 25px;
+    min-height: calc(100vh - 100px);
+  }
+  .account-app .auth-form h1 {
+    font-size: 25px;
+  }
+  .account-app .auth-story .brand {
+    font-size: 24px;
+  }
+  .account-app .auth-foot {
+    font-size: 12.5px;
+  }
+  .account-app #toast {
+    font-size: 13.5px;
+    width: max-content;
+    max-width: 90vw;
+    bottom: 18px;
+  }
+  .account-app .heading-actions {
+    gap: 6px;
+  }
+  .account-app .small-screen-hide {
+    display: none;
+  }
+  .account-app .stepper {
+    gap: 8px;
+  }
+  .account-app .document-row strong {
+    font-size: 13px;
+  }
+  .account-app .document-row .badge {
+    font-size: 12px;
+  }
+  .account-app .page-heading .btn .icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Readable secondary text and unobtrusive navigation scrolling. */
+.account-app .sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: #e7e9ec transparent;
+}
+.account-app .sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+.account-app .sidebar::-webkit-scrollbar-thumb {
+  background: #e7e9ec;
+  border-radius: 4px;
+}
+.account-app .merchant-label {
+  white-space: nowrap;
+  letter-spacing: 1.4px;
+  font-size: 12px;
+  margin-left: 47px;
+}
+.account-app .metric-bottom,
+.account-app .listing-time,
+.account-app .stock-meta,
+.account-app .panel-head p,
+.account-app .queue-panel > p,
+.account-app .queue-row p,
+.account-app .food-cell p,
+.account-app .listing-footer {
+  color: #7d8792;
+}
+.account-app .chart text {
+  fill: #7f8994;
+}
+.account-app th {
+  color: #7d8792;
+}
+.account-app .table-foot,
+.account-app .page-foot,
+.account-app .demo-note {
+  color: #858e99;
+}
+.account-app .badge {
+  font-size: 13px;
+}
+.account-app .queue-row strong {
+  font-size: 14px;
+}
+.account-app .metric-top {
+  color: #727c89;
+}
+@media (max-width: 700px) {
+  .account-app .breadcrumb > span {
+    display: none;
+  }
+  .account-app .demo-label {
+    white-space: nowrap;
+  }
+  .account-app .sidebar {
+    visibility: hidden;
+  }
+  .account-app .sidebar.open {
+    visibility: visible;
+  }
+  .account-app .chart {
+    height: 202px;
+  }
+  .account-app .chart text {
+    font-size: 13px;
+  }
+  .account-app .page-heading .heading-actions {
+    flex: none;
+  }
+  .account-app .merchant-label {
+    margin-left: 47px;
+  }
+}

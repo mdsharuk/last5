@@ -1,0 +1,456 @@
+/* ------------------------------------------------------------------ */
+/* Hero offer carousel                                                */
+/* Brand: primary #19678B · secondary #1FA5CD · accent #7DC142        */
+/* ------------------------------------------------------------------ */
+
+.public-app .hero-carousel {
+  position: relative;
+  height: 545px;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #12384a;
+  box-shadow: 0 26px 70px #12384a2e;
+  isolation: isolate;
+}
+
+.public-app .hero-carousel-track {
+  position: absolute;
+  inset: 0;
+}
+
+.public-app .hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.8s ease,
+    visibility 0.8s ease;
+}
+
+.public-app .hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.public-app .hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.035);
+  transition: transform 7s linear;
+}
+
+.public-app .hero-slide.active img {
+  transform: scale(1);
+}
+
+.public-app .hero-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, #0b29380f 0%, #0b293814 36%, #0b2938a6 70%, #0b2938eb 100%);
+}
+
+.public-app .hero-slide-content {
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+  right: 30px;
+  bottom: 84px;
+  color: #fff;
+}
+
+.public-app .hero-slide-location {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #d9eef5;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.public-app .hero-location-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--brand-accent);
+  box-shadow: 0 0 0 4px #7dc14226;
+  flex: none;
+}
+
+.public-app .hero-slide-title {
+  max-width: 410px;
+  margin: 10px 0 0;
+  color: #fff;
+  font-size: 31px;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.8px;
+}
+
+.public-app .hero-slide-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.public-app .hero-slide-title a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.public-app .hero-slide-shop {
+  margin-top: 6px;
+  color: #c9e4ee;
+  font-size: 13px;
+}
+
+.public-app .hero-slide-bottom {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.public-app .hero-slide-price {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+}
+
+.public-app .hero-slide-price strong {
+  color: var(--brand-accent);
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+}
+
+.public-app .hero-slide-price del {
+  color: #ffffffa6;
+  font-size: 14px;
+}
+
+.public-app .hero-slide-discount {
+  background: var(--brand-accent);
+  color: #173322;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.public-app .hero-slide-stock {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #08293ae0;
+  color: #fff;
+  border: 1px solid #ffffff24;
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-size: 11.5px;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+}
+
+.public-app .live-pill {
+  position: absolute;
+  z-index: 4;
+  top: 22px;
+  left: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 13px;
+  border-radius: 999px;
+  border: 1px solid #ffffff2b;
+  background: #082a3bdb;
+  color: #eaf7ff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+}
+
+.public-app .live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--brand-accent);
+  animation: l5-live-pulse 2s infinite;
+  flex: none;
+}
+
+@keyframes l5-live-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #7dc14266;
+  }
+  70% {
+    box-shadow: 0 0 0 7px #7dc14200;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #7dc14200;
+  }
+}
+
+.public-app .hero-carousel-controls {
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: 64px;
+  padding: 0 20px;
+  background: #0a2c3deb;
+  border-top: 1px solid #ffffff1c;
+  backdrop-filter: blur(14px);
+}
+
+.public-app .hero-carousel-arrow {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  border: 1px solid #ffffff2e;
+  background: #ffffff0d;
+  color: #fff;
+  transition: 0.2s;
+  flex: none;
+}
+
+.public-app .hero-carousel-arrow:hover {
+  background: var(--brand-accent);
+  border-color: var(--brand-accent);
+  color: #173322;
+}
+
+.public-app .hero-carousel-arrow .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.public-app .hero-carousel-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.public-app .hero-carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.public-app .hero-carousel-dots button {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: #ffffff4d;
+  transition: 0.25s;
+}
+
+.public-app .hero-carousel-dots button.active {
+  width: 24px;
+  background: var(--brand-accent);
+}
+
+.public-app .hero-carousel-play {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  border: 1px solid #ffffff26;
+  background: #ffffff08;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.public-app .hero-carousel-play:hover {
+  background: #ffffff1a;
+}
+
+.public-app .hero-carousel-play .icon {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 1200px) {
+  .public-app .hero-carousel {
+    height: 500px;
+    border-radius: 26px;
+  }
+
+  .public-app .hero-slide-title {
+    font-size: 28px;
+  }
+
+  .public-app .hero-slide-content {
+    left: 26px;
+    right: 26px;
+    bottom: 80px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .public-app .hero-carousel {
+    height: 450px;
+  }
+
+  .public-app .hero-slide-title {
+    font-size: 24px;
+  }
+
+  .public-app .hero-slide-content {
+    left: 22px;
+    right: 22px;
+    bottom: 76px;
+  }
+
+  .public-app .hero-slide-price strong {
+    font-size: 23px;
+  }
+
+  .public-app .hero-slide-shop {
+    font-size: 12px;
+  }
+
+  .public-app .hero-carousel-controls {
+    height: 58px;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .public-app .hero-carousel {
+    height: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .public-app .hero-carousel {
+    width: calc(100% - 20px);
+    height: 390px;
+    margin: 0 auto;
+    border-radius: 22px;
+  }
+
+  .public-app .hero-slide-content {
+    left: 20px;
+    right: 20px;
+    bottom: 74px;
+  }
+
+  .public-app .hero-slide-title {
+    font-size: 22px;
+    max-width: 300px;
+  }
+
+  .public-app .hero-slide-location {
+    font-size: 11px;
+  }
+
+  .public-app .hero-slide-shop {
+    font-size: 11.5px;
+  }
+
+  .public-app .hero-slide-price strong {
+    font-size: 21px;
+  }
+
+  .public-app .hero-slide-price del {
+    font-size: 12px;
+  }
+
+  .public-app .hero-slide-discount {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .public-app .hero-slide-stock {
+    font-size: 10px;
+    padding: 6px 9px;
+  }
+
+  .public-app .live-pill {
+    top: 16px;
+    left: 16px;
+    padding: 7px 10px;
+    font-size: 8.5px;
+    letter-spacing: 1.1px;
+  }
+
+  .public-app .hero-carousel-controls {
+    height: 58px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .public-app .hero-carousel-arrow {
+    width: 32px;
+    height: 32px;
+  }
+
+  .public-app .hero-carousel-center {
+    gap: 10px;
+  }
+
+  .public-app .hero-carousel-play {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .public-app .hero-carousel {
+    height: 340px;
+  }
+
+  .public-app .hero-slide-title {
+    font-size: 19px;
+  }
+
+  .public-app .hero-slide-bottom {
+    gap: 8px;
+  }
+
+  .public-app .hero-slide-stock {
+    margin-left: 0;
+  }
+}
+
+/* The longer "Better Tomorrow" headline needs a little more room on phones */
+@media (max-width: 600px) {
+  .public-app .hero h1 {
+    font-size: 46px;
+    letter-spacing: -2.2px;
+  }
+
+  .public-app .hero em {
+    letter-spacing: -1.8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .public-app .hero h1 {
+    font-size: 40px;
+    letter-spacing: -1.8px;
+  }
+}

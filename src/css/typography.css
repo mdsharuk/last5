@@ -1,0 +1,213 @@
+/* ------------------------------------------------------------------ */
+/* Last5 Deal readability scale                                        */
+/*                                                                     */
+/* The imported design used a lot of 8–11px text. The source stylesheets*/
+/* have been raised to a 12px minimum, and this final layer keeps the   */
+/* base reading size, form controls and a few tight components clear.   */
+/* Edit these values to tune the whole project.                        */
+/* ------------------------------------------------------------------ */
+
+.public-app,
+.account-app {
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+/* Body copy and long descriptions */
+.public-app p,
+.account-app p {
+  line-height: 1.7;
+}
+
+.public-app .prose p,
+.public-app .story-copy p,
+.public-app .hero-copy > p,
+.account-app .form-panel > p,
+.account-app .security-card p,
+.account-app .notice,
+.account-app .timeline li {
+  line-height: 1.8;
+}
+
+/* Form controls: never smaller than the reading size */
+.public-app input,
+.public-app select,
+.public-app textarea,
+.account-app input,
+.account-app select,
+.account-app textarea {
+  font-size: 15px;
+}
+
+/* Labels stay slightly smaller than the value but clearly readable */
+.public-app .field > span,
+.account-app .field > label,
+.account-app .field > span {
+  font-size: 13.5px;
+}
+
+/* Small interface copy */
+.public-app small,
+.public-app .small,
+.account-app small,
+.account-app .small {
+  font-size: 13px;
+}
+
+.public-app .tiny,
+.account-app .tiny {
+  font-size: 12.5px;
+}
+
+/* Navigation and footer */
+.public-app .nav a,
+.public-app .mobile-nav a,
+.public-app .mobile-nav button,
+.account-app .nav-link {
+  font-size: 14px;
+}
+
+.public-app .footer h4,
+.account-app .sidebar h3 {
+  font-size: 14px;
+}
+
+.public-app .footer li,
+.public-app .footer-line,
+.public-app .preview-foot,
+.account-app .page-foot {
+  font-size: 13px;
+}
+
+/* Account sidebar: keep the helper label on one line */
+.account-app .customer-switch small {
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+/* Ant Design table text matches the rest of the account */
+.account-app .l5-table .ant-table {
+  font-size: 13px;
+}
+
+.account-app .l5-table .ant-table-thead > tr > th {
+  font-size: 11.5px;
+}
+
+.account-app .l5-table .ant-table-tbody > tr > td {
+  font-size: 13px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Hero savings sticker                                                */
+/* The enlarged labels need a little more room than the original art.  */
+/* ------------------------------------------------------------------ */
+.public-app .sticker {
+  width: 154px;
+  height: 154px;
+  line-height: 1.2;
+}
+
+.public-app .sticker small {
+  font-size: 10.5px;
+  line-height: 1.25;
+  text-align: center;
+  padding: 0 11px;
+  letter-spacing: 0.2px;
+}
+
+.public-app .sticker strong {
+  font-size: 42px;
+  line-height: 1.05;
+}
+
+@media (max-width: 1200px) {
+  .public-app .sticker {
+    width: 132px;
+    height: 132px;
+  }
+
+  .public-app .sticker small {
+    font-size: 10px;
+    padding: 0 9px;
+  }
+
+  .public-app .sticker strong {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .public-app .sticker {
+    width: 118px;
+    height: 118px;
+  }
+
+  .public-app .sticker small {
+    font-size: 9.5px;
+  }
+
+  .public-app .sticker strong {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .public-app .sticker {
+    width: 110px;
+    height: 110px;
+  }
+
+  .public-app .sticker small {
+    font-size: 9px;
+    padding: 0 8px;
+  }
+
+  .public-app .sticker strong {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 600px) {
+  .public-app .sticker {
+    width: 104px;
+    height: 104px;
+  }
+
+  .public-app .sticker small {
+    font-size: 8.5px;
+    padding: 0 8px;
+  }
+
+  .public-app .sticker strong {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  .public-app .sticker {
+    width: 92px;
+    height: 92px;
+  }
+
+  .public-app .sticker small {
+    font-size: 8px;
+  }
+
+  .public-app .sticker strong {
+    font-size: 24px;
+  }
+}
+
+/* Mobile headings keep their hierarchy without oversized line gaps */
+@media (max-width: 700px) {
+  .public-app h1,
+  .account-app h1 {
+    line-height: 1.2;
+  }
+
+  .account-app .page-heading p {
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+}

@@ -1,0 +1,239 @@
+/* last5-blue-palette-v1 */
+/* last5-readability-v1 */
+/* Last5 Deal — supplied brand reference. Labels are authoritative for UI tokens. */
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/Roboto-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/Roboto-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/Roboto-600.ttf") format("truetype");
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/Roboto-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/fonts/Roboto-800.ttf") format("truetype");
+}
+.public-app,
+.account-app {
+  --brand-primary: #19678b;
+  --brand-secondary: #1fa5cd;
+  --brand-accent: #7dc142;
+  --ink: #19678b;
+  --green: #19678b;
+  --orange: #19678b;
+  --orange-dark: #0f4c68;
+  --orange-soft: #eef6fa;
+  --muted: #607c8c;
+  --lime: #e7f5ec;
+  --cream: #f0f7f9;
+  --line: #dbe8f0;
+  --green-soft: #eef6fa;
+  --bg: #f4f8fb;
+  font-family: Roboto, Arial, sans-serif;
+}
+.public-app .brand-logo,
+.account-app .brand-logo {
+  width: 175px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+.public-app .header .logo,
+.account-app .header .logo {
+  min-width: 175px;
+}
+.public-app .footer .brand-logo,
+.account-app .footer .brand-logo {
+  width: 190px;
+}
+.public-app .hero em,
+.account-app .hero em {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: var(--brand-primary);
+}
+.public-app .sticker,
+.account-app .sticker {
+  background: var(--brand-accent);
+  color: #1f3a27;
+  outline-color: #4f8a2c;
+}
+.public-app .discount,
+.account-app .discount {
+  background: var(--brand-accent);
+  color: #173322;
+  font-weight: 700;
+}
+.public-app .category-btn.active span,
+.account-app .category-btn.active span {
+  background: var(--brand-primary);
+  color: #fff;
+}
+.public-app .category-btn.active,
+.account-app .category-btn.active {
+  color: var(--brand-primary);
+}
+.public-app .hero-photo:before,
+.account-app .hero-photo:before {
+  background: #e9f4f8;
+}
+.public-app .shop-tile.active,
+.account-app .shop-tile.active {
+  border-color: var(--brand-secondary);
+}
+.public-app .eyebrow,
+.account-app .eyebrow {
+  color: #3f6f86;
+}
+.public-app .food-area,
+.account-app .food-area,
+.public-app .shop-line,
+.account-app .shop-line,
+.public-app .collection-line,
+.account-app .collection-line,
+.public-app .section-head p,
+.account-app .section-head p,
+.public-app .food-price small,
+.account-app .food-price small,
+.public-app .image-note,
+.account-app .image-note {
+  color: #5c7384;
+}
+.public-app .announcement,
+.account-app .announcement {
+  background: var(--brand-primary);
+  color: #fff;
+}
+.public-app .announcement span,
+.account-app .announcement span {
+  color: #d6eef7;
+}
+.public-app .button:hover,
+.account-app .button:hover {
+  background: #0f4c68;
+  border-color: #0f4c68;
+}
+.public-app .button.light:hover,
+.account-app .button.light:hover {
+  color: #fff;
+}
+.public-app :focus-visible,
+.account-app :focus-visible {
+  outline-color: var(--brand-accent);
+}
+.public-app .customer-main,
+.account-app .customer-main {
+  font-family: Roboto, Arial, sans-serif;
+}
+.public-app .customer-main .brand,
+.account-app .customer-main .brand {
+  min-height: 60px;
+}
+.public-app .customer-main .brand-logo,
+.account-app .customer-main .brand-logo {
+  width: 174px;
+}
+.public-app .customer-main .merchant-label,
+.account-app .customer-main .merchant-label {
+  margin-top: 10px;
+  color: #5c7384;
+}
+.public-app .customer-main .account-hero,
+.account-app .customer-main .account-hero {
+  background: #eef6fa;
+  border-color: #dbeaf2;
+}
+.public-app .customer-main .account-hero h2,
+.account-app .customer-main .account-hero h2 {
+  color: var(--brand-primary);
+}
+.public-app .customer-main .account-hero p,
+.account-app .customer-main .account-hero p {
+  color: #506b7d;
+}
+.public-app .customer-main .account-hero .eyebrow,
+.account-app .customer-main .account-hero .eyebrow {
+  color: #3f6f86;
+}
+.public-app .customer-main .nav-link.active,
+.account-app .customer-main .nav-link.active {
+  background: #e7f5ec;
+  color: var(--brand-primary);
+}
+.public-app .customer-main .auth-story,
+.account-app .customer-main .auth-story {
+  background: #eef6fa;
+  color: var(--brand-primary);
+}
+.public-app .customer-main .auth-story .brand,
+.account-app .customer-main .auth-story .brand {
+  align-self: flex-start;
+  background: white;
+  border-radius: 12px;
+  padding: 12px 18px;
+}
+.public-app .customer-main .auth-story .story-copy h1,
+.account-app .customer-main .auth-story .story-copy h1 {
+  color: var(--brand-primary);
+}
+.public-app .customer-main .auth-story .story-copy p,
+.account-app .customer-main .auth-story .story-copy p {
+  color: #526f82;
+}
+.public-app .customer-main .auth-story .story-bottom,
+.account-app .customer-main .auth-story .story-bottom {
+  color: #526f82;
+}
+.public-app .customer-main .customer-switch .avatar,
+.account-app .customer-main .customer-switch .avatar,
+.public-app .customer-main .topbar .avatar,
+.account-app .customer-main .topbar .avatar {
+  background: #e7f5ec;
+  color: var(--brand-primary);
+}
+.public-app .customer-main .account-welcome .eyebrow,
+.account-app .customer-main .account-welcome .eyebrow {
+  color: #3f6f86;
+}
+@media (max-width: 600px) {
+  .public-app .brand-logo,
+  .account-app .brand-logo {
+    width: 126px;
+  }
+  .public-app .header .logo,
+  .account-app .header .logo {
+    min-width: 126px;
+  }
+  .public-app .footer .brand-logo,
+  .account-app .footer .brand-logo {
+    width: 160px;
+  }
+  .public-app .customer-main .brand-logo,
+  .account-app .customer-main .brand-logo {
+    width: 160px;
+  }
+}
